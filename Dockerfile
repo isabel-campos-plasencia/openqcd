@@ -9,7 +9,6 @@ RUN yum -y groupinstall "Development Tools"
 RUN yum -y install \
     wget \
     tcsh \
-    texlive \
     emacs \
     which \
     gnuplot \
