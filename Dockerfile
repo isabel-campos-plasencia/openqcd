@@ -47,10 +47,12 @@ RUN echo '/usr/bin/cat /etc/motd' >> /etc/profile.d/scicomp.sh
 RUN mkdir -p /opt
 RUN mkdir -p /opt/projects
 WORKDIR /opt/projects
-RUN chmod -R ugo=rwx /opt
 
 RUN wget http://luscher.web.cern.ch/luscher/openQCD/openQCD-1.6.tar.gz
 RUN tar xzvf openQCD-1.6.tar.gz
+RUN chown -R developer.users /opt
+
+WORKDIR /opt/projects/openQCD-1.6
 
 CMD ["/bin/bash"]
 
