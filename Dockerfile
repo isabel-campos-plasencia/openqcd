@@ -48,11 +48,11 @@ RUN mkdir -p /opt
 RUN mkdir -p /opt/projects
 WORKDIR /opt/projects
 
-RUN wget http://luscher.web.cern.ch/luscher/openQCD/openQCD-1.6.tar.gz
-RUN tar xzvf openQCD-1.6.tar.gz
+RUN wget http://luscher.web.cern.ch/luscher/openQCD/openQCD-2.0.tar.gz
+RUN tar xzvf openQCD-2.0.tar.gz
 RUN chown -R developer.users /opt
 
-WORKDIR /opt/projects/openQCD-1.6
+WORKDIR /opt/projects/openQCD-2.0
 
 CMD ["/bin/bash"]
 
