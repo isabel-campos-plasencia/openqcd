@@ -30,7 +30,7 @@ RUN /usr/sbin/useradd developer
 RUN echo '/******************************************************************************/' > /etc/motd 
 RUN echo '/**********   WELCOME TO CENTOS7 openQCD CONTAINER    *************************/' >> /etc/motd 
 RUN echo '/                                                                              /' >> /etc/motd 
-RUN echo '/    openQCD is installed in /opt/projects/openQCD-1.6                         /' >> /etc/motd 
+RUN echo '/    openQCD is installed in /opt/projects/openQCD-2.0                         /' >> /etc/motd 
 RUN echo '/                                                                              /' >> /etc/motd 
 RUN echo '/ You might need to source the environment depending on the local directories  /' >> /etc/motd 
 RUN echo '/ you mount (-v option) by typing: source /etc/profile.d/scicomp.sh            /' >> /etc/motd 
